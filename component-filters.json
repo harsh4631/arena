@@ -27,7 +27,8 @@
       "title",
       "hero",
       "cards",
-      "columns"
+      "columns",
+      "teasers"
     ]
   },
   {
@@ -35,5 +36,11 @@
     "components": [
       "card"
     ]
-  }
+  },
+  {
+    "id": "teasers",
+    "components":[
+      "teaser"
+    ]
+    }
 ]
