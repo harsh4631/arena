@@ -1,8 +1,9 @@
-.arena-header-wrapper { /* Add some basic styling for visibility */
+.arena-header-wrapper .arena-header block p{ /* Add some basic styling for visibility */
     padding: 20px;
     background-color: #f1f1f1;
+    margin-left: 60%;
 }
-.arena-header {
+/* .arena-header {
     border: 1px solid #ccc;
     padding: 10px;
     background-color: #fff;
@@ -17,4 +18,4 @@
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-}
+} */
