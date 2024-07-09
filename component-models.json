@@ -231,5 +231,25 @@
         "value":""
       }
     ]
+  },
+  {
+    "id": "arena_header",
+    "fields":[
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "arena_title",
+        "label": "title",
+        "value":""
+      },
+      {
+       "component": "richtext",
+        "valueType": "string",
+        "name": "arena_list",
+        "label": "LIST",
+        "value":"" 
+      }
+
+    ]
   }
 ]
