@@ -9,24 +9,24 @@ export default function decorate(block){
     const logotitle=logo?.textContent.trim();
     const list = Array.from(listtitle?[listtitle]:[]).map((p) => p.outerHTML).join('');
        
-    
+    // console.log("my value is" ,logotitle);
     return {
         logotitle,
         list
     };
     
 }
-console.log("my value is" ,logotitle);
+
 
 const arenaData = getArena_HeaderData(block);
-    console.log(arenaData.logotitle);
-    console.log(arenaData.list);
+    // console.log(arenaData.logotitle);
+    // console.log(arenaData.list);
 const areanaHtml = `
     <div class="arena_header">
     ${arenaData.logotitle ? `<h1 class = "abc">${arenaData.logotitle}</h1>` : ''}
 
     <div class = "arena_list">
-    ${arenaData.list ? `${arenaData.list}` : ''}
+    ${arenaData.list ?  `<p class="bcd"> ${arenaData.list}</p>` : ''}
     </div>
     </div>
     `;
