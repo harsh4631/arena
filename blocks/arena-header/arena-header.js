@@ -4,10 +4,11 @@ export default function decorate(block){
     const[logo, listtitle] = block.children;
 
      const logotitle = logo?.textContent.trim();
-    //const listName = Array.from(listtitle?[listtitle]:[]).map((p) => p.outerHTML).join('');
+    //  const sublist = listtitle.querySelector('p').textContent.trim();
+     const listName = Array.from(listtitle?[listtitle]:[]).map((p) => p.outerHTML).join('');
 
-    console.log("my current title value is+++++",logotitle);
-    // console.log("my new valu is *****************",listName);
+    // console.log("my current title value is+++++",logotitle);
+    console.log("my new valu is *****************",listName);
 
 
     //const logotitle=logo?.querySelector('p').textContent.trim();
@@ -19,8 +20,8 @@ export default function decorate(block){
 
     // console.log("my name",listName);
     return {
-        logotitle
-        //listName
+        logotitle,
+        listName
     };
     
 }
@@ -33,7 +34,9 @@ const areanaHtml = `
     <div class="arena_header">
     ${arenaData.logotitle ? `<h1 class = "abc">${arenaData.logotitle}</h1>` : ''}
 
-   
+    <div class = "arena_list">
+    ${arenaData.listName ?  `<p class="bcd"> ${arenaData.listName}</p>` : ''}
+    </div>
     </div>
 `;
     block.innerHTML = areanaHtml;
