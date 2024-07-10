@@ -18,8 +18,8 @@ export default function decorate(block){
 
 
 const arenaData = getArena_HeaderData(block);
-    console.log(logotitle);
-    console.log(list);
+    console.log(arenaData.logotitle);
+    console.log(arenaData.list);
 const areanaHtml = `
     <div class="arena_header">
     ${arenaData.logotitle ? `<h1 class = "abc">${arenaData.logotitle}</h1>` : ''}
