@@ -9,8 +9,7 @@ export default function decorate(block){
     const logotitle=logo?.textContent.trim();
     const list = Array.from(listtitle?[listtitle]:[]).map((p) => p.outerHTML).join('');
        
-    console.log(logotitle);
-    console.log(list);
+    
     return {
         logotitle,
         list
@@ -19,6 +18,8 @@ export default function decorate(block){
 
 
 const arenaData = getArena_HeaderData(block);
+    console.log(logotitle);
+    console.log(list);
 const areanaHtml = `
     <div class="arena_header">
     ${arenaData.logotitle ? `<h1 class = "abc">${arenaData.logotitle}</h1>` : ''}
