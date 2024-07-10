@@ -1,4 +1,4 @@
-import utility from '../../utility/utility.js';
+// import utility from '../../utility/utility.js';
 export default function decorate(block){
     function getArena_HeaderData(block){
     const[
@@ -17,14 +17,13 @@ export default function decorate(block){
 
 
 const arenaData = getArena_HeaderData(block);
-
-const areanaHtml = utility.sanitizeHtml(`
+const areanaHtml = `
     <div class="arena_header">
     ${arenaData.logotitle ? `<h1>${arenaData.logotitle}</h1>` : ''}
     <div class = "arena_list">
     ${arenaData.list ? `${arenaData.list}` : ''}
     </div>
     </div>
-    `);
+    `;
     block.innerHTML = areanaHtml;
 } 
