@@ -238,14 +238,14 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "arena_title",
-        "label": "title",
+        "name": "title",
+        "label": "Title",
         "value":""
       },
       {
        "component": "richtext",
         "valueType": "string",
-        "name": "arena_list",
+        "name": "list",
         "label": "LIST",
         "value":"" 
       }
