@@ -8,7 +8,9 @@ export default function decorate(block){
 
     const logotitle=logo?.textContent.trim();
     const list = Array.from(listtitle?[listtitle]:[]).map((p) => p.outerHTML).join('');
-  
+       
+    console.log(logotitle);
+    console.log(list);
     return {
         logotitle,
         list
