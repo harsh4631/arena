@@ -3,16 +3,16 @@ export default function decorate(block){
     function getArena_HeaderData(block){
     const[
         logo,
-        listtitle
+        // listtitle
     ]= block.children;
 
     const logotitle=logo?.textContent.trim();
-    const list = Array.from(listtitle?[listtitle]:[]).map((p) => p.outerHTML).join('');
+    // const list = Array.from(listtitle?[listtitle]:[]).map((p) => p.outerHTML).join('');
        
     
     return {
         logotitle,
-        list
+        // list
     };
     
 }
@@ -20,13 +20,10 @@ console.log("my value is" ,logotitle);
 
 const arenaData = getArena_HeaderData(block);
     console.log(arenaData.logotitle);
-    console.log(arenaData.list);
+    // console.log(arenaData.list);
 const areanaHtml = `
     <div class="arena_header">
     ${arenaData.logotitle ? `<h1 class = "abc">${arenaData.logotitle}</h1>` : ''}
-    <div class = "arena_list">
-    ${arenaData.list ? `${arenaData.list}` : ''}
-    </div>
     </div>
     `;
     block.innerHTML = areanaHtml;
