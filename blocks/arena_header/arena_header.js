@@ -6,7 +6,7 @@ export default function decorate(block){
         listtitle
     ]= block.children;
 
-    const logotitle=logo?.querySelector('p');
+    const logotitle=logo?.textContent.trim();
     const list = Array.from(listtitle?[listtitle]:[]).map((p) => p.outerHTML).join('');
        
     
@@ -14,8 +14,9 @@ export default function decorate(block){
         logotitle,
         list
     };
+    
 }
-
+console.log("my value is" ,logotitle);
 
 const arenaData = getArena_HeaderData(block);
     console.log(arenaData.logotitle);
