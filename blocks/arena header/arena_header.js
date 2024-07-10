@@ -6,7 +6,7 @@ export default function decorate(block){
         listtitle
     ]= block.children;
 
-    const logotitle=logo?.textContent.trim();
+    const logotitle=logo?.querySelector('p');
     const list = Array.from(listtitle?[listtitle]:[]).map((p) => p.outerHTML).join('');
        
     
