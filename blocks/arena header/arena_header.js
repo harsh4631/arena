@@ -19,7 +19,7 @@ export default function decorate(block){
 const arenaData = getArena_HeaderData(block);
 const areanaHtml = `
     <div class="arena_header">
-    ${arenaData.logotitle ? `<h1>${arenaData.logotitle}</h1>` : ''}
+    ${arenaData.logotitle ? `<h1 class = "abc">${arenaData.logotitle}</h1>` : ''}
     <div class = "arena_list">
     ${arenaData.list ? `${arenaData.list}` : ''}
     </div>
