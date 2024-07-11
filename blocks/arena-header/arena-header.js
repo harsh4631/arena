@@ -8,7 +8,7 @@ export default function decorate(block){
      const listName = Array.from(listtitle?[listtitle]:[]).map((p) => p.outerHTML).join('');
 
     // console.log("my current title value is+++++",logotitle);
-    console.log("my new valu is *****************",listName);
+    // console.log("my new valu is *****************",listName);
 
 
     //const logotitle=logo?.querySelector('p').textContent.trim();
@@ -31,13 +31,16 @@ const arenaData = getArena_HeaderData(block);
     // console.log(arenaData.logotitle);
     // console.log(arenaData.listName);
 const areanaHtml = `
+<nav class = "navy">
     <div class="arena_header">
-    ${arenaData.logotitle ? `<h1 class = "abc">${arenaData.logotitle}</h1>` : ''}
-
+    ${arenaData.logotitle ? `<h1>${arenaData.logotitle}</h1>` : ''}
+</div>
     <div class = "arena_list">
-    ${arenaData.listName ?  `<p class="bcd"> ${arenaData.listName}</p>` : ''}
+    <ul>
+    ${arenaData.listName ?  `<li> ${arenaData.listName}</li>` : ''}
+    </ul>
     </div>
-    </div>
+    </nav>
 `;
     block.innerHTML = areanaHtml;
 } 
