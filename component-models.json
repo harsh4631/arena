@@ -243,13 +243,6 @@
         "value":""
       },
       {
-        "component": "aem-content",
-        "valueType": "string",
-        "name": "titlelink",
-        "label": "Titlelink",
-        "value":""
-      },
-      {
        "component": "richtext",
         "valueType": "string",
         "name": "list",

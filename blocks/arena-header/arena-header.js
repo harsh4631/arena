@@ -4,7 +4,7 @@ export default function decorate(block){
     const[logo, listtitle] = block.children;
 
      const logotitle = logo?.textContent.trim();
-     const logolink = logo?.textContent.trim();
+    //  const logolink = logo?.textContent.trim();
     //  const sublist = listtitle.querySelector('p').textContent.trim();
      const listName = Array.from(listtitle?[listtitle]:[]).map((p) => p.outerHTML).join('');
 
@@ -22,7 +22,6 @@ export default function decorate(block){
     // console.log("my name",listName);
     return {
         logotitle,
-        logolink,
         listName
     };
     
