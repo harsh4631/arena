@@ -32,7 +32,7 @@
   font-weight: 600;
 }
 
-.arena_list p {
+/* .arena_list p {
     display: inline-flex;
     list-style: none;
   margin-left: 7px;
@@ -54,4 +54,4 @@
 .arena_list p:hover{
     background: #fff;
   color: black;
-}
+} */
