@@ -36,7 +36,7 @@ const areanaHtml = `
 <nav class = "navy">
     <div class="arena_header">
     ${arenaData.logotitle ? `<h1>${arenaData.logotitle}</h1>` : ''}
-    ${arenaData.logolink ? `<a href="${arenaData.logolink}"></a>` : ''}
+   
 </div>
     <div class = "arena_list">
     <ul>
