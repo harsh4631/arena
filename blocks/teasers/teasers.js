@@ -26,13 +26,13 @@ export default function decorate(block){
        </div>
        
        <div class="sub-teaser">
-       <div class="img">
+       
        ${teaserData.image123 ? teaserData.image123.outerHTML : ''}
-       </div>
+       
        ${teaserData.pretitle ? `<p class="pre">${teaserData.pretitle}</p>` : ''}
-       <div class="des">
+      
        ${teaserData.description1 ? `${teaserData.description1}` : ''}
-      </div>
+      
        </div>
     </div>
     `;
