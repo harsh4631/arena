@@ -186,7 +186,18 @@
       }
     ]
   },
-  
+  {
+    "id": "teasers",
+    "fields":[
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "maintitle",
+        "label": "maintitle",
+        "value":""
+      }
+    ]
+  },
   {
     "id": "teaser",
     "fields": [
