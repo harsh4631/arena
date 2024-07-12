@@ -211,16 +211,16 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "cardtitle",
-        "label": "CardTitle",
+        "name": "title3",
+        "label": "Title",
         "value":""
       },
      
       {
         "component": "richtext",
         "valueType": "string",
-        "name": "carddescription",
-        "label": "Carddescription",
+        "name": "description3",
+        "label": "description",
         "value":""
       }
     ]
