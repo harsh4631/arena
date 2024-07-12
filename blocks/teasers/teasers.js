@@ -6,9 +6,9 @@ export default function decorate(block){
 
         const maintitle = main?.textContent.trim();
         const image123 = subcard.querySelector('picture');
-        const[subtitle,subdescription] = subcard.querySelectorAll('p')
-        const pretitle = subtitle?.textContent.trim();
-        const description1 = Array.from(subdescription?[subdescription]:[]).map((p) => p.outerHTML).join('');
+        // const[subtitle,subdescription] = subcard.querySelectorAll('p')
+        const pretitle = subcard?.textContent.trim();
+        const description1 = Array.from(subcard?[subcard]:[]).map((p) => p.outerHTML).join('');
         // const description1 = subcard?.textContent.trim();
         console.log("hello",description1);
         return{
