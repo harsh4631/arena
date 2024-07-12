@@ -186,48 +186,30 @@
       }
     ]
   },
-  {
-    "id": "teasers",
-    "fields":[
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "title",
-        "label": "title",
-        "value":""
-      }
-    ]
-  },
+  
   {
     "id": "teaser",
     "fields": [
       {
         "component": "reference",
         "valueType": "string",
-        "name": "background_image",
+        "name": "image",
         "label": "Image",
         "multi": false
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "foreground_pretitle",
-        "label": "pre title",
-        "value":""
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "foreground_title",
-        "label": "Title",
+        "name": "cardtitle",
+        "label": "CardTitle",
         "value":""
       },
      
       {
         "component": "richtext",
         "valueType": "string",
-        "name": "foreground_description",
-        "label": "DESCRIPTION",
+        "name": "carddescription",
+        "label": "Carddescription",
         "value":""
       }
     ]
