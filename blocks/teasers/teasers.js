@@ -7,9 +7,9 @@ export default function decorate(block){
         const maintitle = main?.textContent.trim();
         const image123 = subcard.querySelector('picture');
         const pretitle = subcard?.textContent.trim();
-        const description1 = Array.from(subcard?[subcard]:[]).map((p) => p.outerHTML).join('');
-
-        console.log("hello",pretitle);
+        // const description1 = Array.from(subcard?[subcard]:[]).map((p) => p.outerHTML).join('');
+        const description1 = subcard?.textContent.trim();
+        console.log("hello",description1);
         return{
             maintitle,
             image123,
@@ -27,10 +27,13 @@ export default function decorate(block){
        <div class="sub-teaser">
        ${teaserData.image123 ? teaserData.image123.outerHTML : ''}
        ${teaserData.pretitle ? `<p class="pre">${teaserData.pretitle}</p>` : ''}
-       ${teaserData.description1 ? `<p class = "des">${teaserData.description1}</p>` : ''}
+       <div class="hbd">
+       ${teaserData.description1 ? `${teaserData.description1}` : ''}
+       </div>
        </div>
     </div>
     `;
+    console.log("bye" , description1);
     block.innerHTML = teasertitle;
 }
 

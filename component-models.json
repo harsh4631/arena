@@ -204,14 +204,14 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "image",
+        "name": "imageing",
         "label": "Image",
         "multi": false
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "title3",
+        "name": "ling",
         "label": "Title",
         "value":""
       },
@@ -219,7 +219,7 @@
       {
         "component": "richtext",
         "valueType": "string",
-        "name": "description3",
+        "name": "sling",
         "label": "description",
         "value":""
       }
