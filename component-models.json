@@ -211,16 +211,16 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "ling",
-        "label": "Title",
+        "name": "cardtitle",
+        "label": "cardTitle",
         "value":""
       },
      
       {
         "component": "richtext",
         "valueType": "string",
-        "name": "sling",
-        "label": "description",
+        "name": "carddescription",
+        "label": "card description",
         "value":""
       }
     ]
