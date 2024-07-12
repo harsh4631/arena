@@ -44,5 +44,7 @@ const areanaHtml = `
     </div>
     </nav>
 `;
+
     block.innerHTML = areanaHtml;
+    
 } 
