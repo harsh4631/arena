@@ -18,20 +18,5 @@ export default function decorate(block){
 
     }
     const teascarData = getteasercardData(block);
-    const htmlteaser = `
-    <div class="view-teaser">
-       <div class ="view-title">
-       ${teascarData.mainheading? `<h1>${teascarData.mainheading}</h1>` : ''}
-       </div>
-
-    <div class="viewsub-teaser">
-    ${teascarData ? teascarData.imague.outerHTML : ''}
-
-    ${teascarData ? `<p class="pre">${teascarData.viewtitle}</p>` : ''}
-      
-    ${teascarData ? `${teascarData.viewdesc}` : ''}
-    </div>
-    </div>
-    `;
-    block.innerHTML = htmlteaser;
+   
 }
