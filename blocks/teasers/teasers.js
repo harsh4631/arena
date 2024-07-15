@@ -20,9 +20,9 @@ export default function decorate(block){
     const teascarData = getteasercardData(block);
     const htmlteaser = `
     <div class="view-teaser">
-       <div class ="view-title">
+       
        ${teascarData.mainheading? `<h1>${teascarData.mainheading}</h1>` : ''}
-       </div>
+      
 
     
     ${teascarData ? teascarData.imague.outerHTML : ''}
