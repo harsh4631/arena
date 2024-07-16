@@ -4,8 +4,8 @@ export default function decorate(block){
 
         const mainheading = toparea?.textContent.trim();
         const imague = bottomarea.querySelector('picture');
-        const [belowtitle , belowdes] = bottomarea.querySelectorAll('p');
-        const viewtitle = belowtitle?.textContent.trim();
+        const belowdes = bottomarea.querySelectorAll('p');
+        const viewtitle = bottomarea?.textContent.trim();
         const viewdesc = Array.from(belowdes?[belowdes]:[]).map((p) => p.outerHTML).join('');
 
         console.log("hello",viewdesc);
