@@ -6,14 +6,14 @@ export default function decorate(block){
         const imague = bottomarea.querySelector('picture');
         const [belowtitle , belowdes] = bottomarea.querySelectorAll('p');
         const viewtitle = belowtitle?.textContent.trim();
-        // const viewdesc = Array.from(bottomarea?[bottomarea]:[]).map((p) => p.outerHTML).join('');
+        const viewdesc = Array.from(belowdes?[belowdes]:[]).map((p) => p.outerHTML).join('');
 
         console.log("hello",viewdesc);
         return{
             mainheading,
             imague,
-            viewtitle
-            // viewdesc
+            viewtitle,
+            viewdesc
         };
 
     }
@@ -34,7 +34,9 @@ export default function decorate(block){
     ${teascarData ? `<p>${teascarData.viewtitle}</p>` : ''}
      </div> 
 
-    
+     <div class="viewdes-teaser">
+    ${teascarData ? `<p>${teascarData.viewdesc}</p>` : ''}
+    </div>
     </div>
     </div>
     `;
