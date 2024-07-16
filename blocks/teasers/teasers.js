@@ -1,11 +1,15 @@
 export default function decorate(block){
     function getteasercardData(block){
-        const[toparea,bottomarea,desbottom]=block.children;
+        const[toparea, bottomarea]=block.children;
 
         const mainheading = toparea?.textContent.trim();
+
         const imague23 = bottomarea.querySelector('picture');
-        const belowdes = desbottom.querySelector('p');
-        const viewtitle = bottomarea?.textContent.trim();
+     
+        const [belowdes,titleh1] = bottomarea.querySelectorAll('p');
+
+        const viewtitle = titleh1?.textContent.trim();
+
         const viewdesc = Array.from(belowdes?[belowdes]:[]).map((p) => p.outerHTML).join('');
 
         console.log("hello",viewdesc);

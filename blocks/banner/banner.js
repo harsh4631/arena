@@ -18,7 +18,7 @@ export default function decorate(block){
 
         const descnexa = Array.from(nexadesc ? [nexadesc]:[]).map ((p) =>p.outerHTML).join('');
 
-        console.log("bye",scrolnexa);
+        // console.log("bye",scrolnexa);
 
         return{
             dispimg,
