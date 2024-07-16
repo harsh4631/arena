@@ -3,7 +3,7 @@ export default function decorate(block){
         const[toparea,bottomarea]=block.children;
 
         const mainheading = toparea?.textContent.trim();
-        const imague = bottomarea.querySelector('picture');
+        const imague23 = bottomarea.querySelector('picture');
         // const belowdes = bottomarea.querySelectorAll('p');
         const viewtitle = bottomarea?.textContent.trim();
         const viewdesc = Array.from(bottomarea?[bottomarea]:[]).map((p) => p.outerHTML).join('');
@@ -11,7 +11,7 @@ export default function decorate(block){
         console.log("hello",viewdesc);
         return{
             mainheading,
-            imague,
+            imague23,
             viewtitle,
             viewdesc
         };
@@ -28,7 +28,7 @@ export default function decorate(block){
     <div class="viewsub-teaser">
     
     <div class="viewimg-teaser">
-    ${teascarData ? teascarData.imague.outerHTML : ''}
+    ${teascarData ? teascarData.imague23.outerHTML : ''}
     </div>
     <div class="viewpara-teaser">
     ${teascarData ? `${teascarData.viewtitle}` : ''}
