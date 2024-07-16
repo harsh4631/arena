@@ -244,5 +244,39 @@
       }
 
     ]
+  },
+  {
+    "id": "banner",
+    "fields":[
+
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "bannerimage",
+        "label": "Banner Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "bannerpretitle",
+        "label": "Pre Title",
+        "value":"" 
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "bannerlist",
+        "label": "List",
+        "value":"" 
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "bannerdesc",
+        "label": "Banner Desc",
+        "value":"" 
+      }
+    ]
   }
 ]
