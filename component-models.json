@@ -192,7 +192,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "maintitle",
+        "name": "nagarro",
         "label": "maintitle",
         "value":""
       }
