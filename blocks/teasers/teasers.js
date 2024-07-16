@@ -30,13 +30,13 @@ export default function decorate(block){
     <div class="viewimg-teaser">
     ${teascarData ? teascarData.imague.outerHTML : ''}
     </div>
-    
+    <div class="viewpara-teaser">
     ${teascarData ? `<p>${teascarData.viewtitle}</p>` : ''}
-    
+     </div> 
 
-     
+     <div class="viewdes-teaser">
     ${teascarData ? `${teascarData.viewdesc}` : ''}
-  
+    </div>
     </div>
     </div>
     `;
