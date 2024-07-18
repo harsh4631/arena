@@ -32,25 +32,28 @@ export default function decorate(block){
 
     const htmlbanner = `
     <div class="banner-main">
-       <div class="banner-img">
-       ${bannernexa.dispimg ? bannernexa.dispimg.outerHTML : ''}
-      </div>
-
-         <div class="banner-sub">
-         ${bannernexa.prenexa ? `<p class = "def">${bannernexa.prenexa}</p>` : ''}
-
-          <div class="banner-descone">
-          ${bannernexa.scrolnexa ? `${bannernexa.scrolnexa}` : ''}
-          </div>
-
-           <div class="banner-destwo">
-          ${bannernexa.descnexa ? `${bannernexa.descnexa}` : ''}
-          </div>
-
-         </div>
-
-
+    <div class="imgh">
+    ${bannernexa.dispimg ? bannernexa.dispimg.outerHTML : ''}
     </div>
+
+    <div class="sub">
+    ${bannernexa.prenexa ? `<p class = "def">${bannernexa.prenexa}</p>` : ''}
+    </div>
+
+    <div class="descone">
+    ${bannernexa.scrolnexa ? `${bannernexa.scrolnexa}` : ''}
+    </div>
+
+    <div class="destwo">
+    ${bannernexa.descnexa ? `${bannernexa.descnexa}` : ''}
+    </div>
+    
+    
+ </div>
+
+
+
+    
 
     `;
     block.innerHTML = htmlbanner;
