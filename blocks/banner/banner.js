@@ -8,7 +8,7 @@ export default function decorate(block){
 
         const dese1 = bannerdes.querySelector('p');
 
-        const nexadesc = descbanner.querySelector('p');
+        const [onedesc,two] = descbanner.querySelectorAll('p');
 
         // const nexadesc = bannerpara.querySelector('p');
 
@@ -16,7 +16,11 @@ export default function decorate(block){
 
         const scrolnexa = Array.from(dese1 ? [dese1]:[]).map ((p) =>p.outerHTML).join('');
 
-        const descnexa = Array.from(nexadesc ? [nexadesc]:[]).map ((p) =>p.outerHTML).join('');
+        // const descnexa = Array.from(nexadesc ? [nexadesc]:[]).map ((p) =>p.outerHTML).join('');
+
+        const des1 = onedesc?.textContent.trim();
+
+        const twodes = two?.textContent.trim();
 
         // console.log("bye",scrolnexa);
 
@@ -24,7 +28,8 @@ export default function decorate(block){
             dispimg,
             prenexa,
             scrolnexa,
-            descnexa
+            onedesc,
+            two
         };
 
     }
@@ -32,9 +37,9 @@ export default function decorate(block){
 
     const htmlbanner = `
     <div class="banner-main">
-    <div class="imgh">
+    
     ${bannernexa.dispimg ? bannernexa.dispimg.outerHTML : ''}
-    </div>
+   
 
     <div class="sub">
     ${bannernexa.prenexa ? `<p class = "def">${bannernexa.prenexa}</p>` : ''}
@@ -45,7 +50,9 @@ export default function decorate(block){
     </div>
 
     <div class="destwo">
-    ${bannernexa.descnexa ? `${bannernexa.descnexa}` : ''}
+    ${bannernexa.onedesc ? `${bannernexa.onedesc}` : ''}
+
+    ${bannernexa.two ? `${bannernexa.two}` : ''}
     </div>
     
     

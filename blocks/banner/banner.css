@@ -52,20 +52,33 @@
 
 
 .banner-main {
+    margin-top: 10px;
     position: relative;
     text-align: center;
-    color: black;
-    width: 100%;
+    color:white;
    
 
 }
-.imgh{
-    width: 100rem;
+main img {
+    width: 98.7rem;
+    height: auto;
 }
+
 
 .destwo{
     position: absolute;
     bottom: 203px;
     right: 255px;
       
+}
+.sub{
+    position: absolute;
+    bottom: 220px;
+    left: 93px;
+}
+
+.descone{
+    position: absolute;
+    bottom: 110px;
+    left: 93px;
 }

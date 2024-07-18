@@ -271,12 +271,20 @@
         "value":"" 
       },
       {
-        "component": "richtext",
+        "component": "text",
         "valueType": "string",
-        "name": "bannerdesc",
-        "label": "Banner Desc",
+        "name": "onebannerdesc",
+        "label": "Banner Desc list",
+        "value":"" 
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "twobannerdesc",
+        "label": "Banner Desc list",
         "value":"" 
       }
+
     ]
   }
 ]
