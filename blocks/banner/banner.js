@@ -64,4 +64,14 @@ export default function decorate(block){
 
     `;
     block.innerHTML = htmlbanner;
+
+
+
 }
+
+// const section = document.getElementsByClassName('destwo').querySelector('.block.destwo');
+//             for (let i = 1; i <= 10; i++) {
+//                 const p = document.createElement('p');
+//                 p.textContent = `Additional content line ${i}`;
+//                 section.appendChild(p);
+//             }

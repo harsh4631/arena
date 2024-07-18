@@ -54,7 +54,7 @@
 .banner-main {
     margin-top: 10px;
     position: relative;
-    text-align: center;
+    /* text-align: center; */
     color:white;
    
 
@@ -67,18 +67,26 @@ main img {
 
 .descone{
     position: absolute;
-    bottom: 203px;
+    bottom: 167px;
     right: 255px;
+    font-size: medium;
       
 }
 .sub{
     position: absolute;
-    bottom: 220px;
+    bottom: 196px;
     left: 93px;
+    font-size: medium;
 }
 
 .destwo{
+    height: 200px; /* Adjust height as needed */
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
     position: absolute;
-    bottom: 110px;
-    left: 93px;
+    bottom: 13px;
+    left: 83px;
+    font-weight: bold;
+    font-size: xx-large;
 }
