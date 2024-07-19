@@ -23,7 +23,7 @@ export default function decorate(block){
     }
     const teascarData = getteasercardData(block);
     const htmlteaser = `
-    <div class="view-teaser">
+   
        
     ${teascarData.mainheading? `<h1>${teascarData.mainheading}</h1>` : ''}
     ${teascarData.imague23 ? teascarData.imague23.outerHTML : ''}
@@ -33,7 +33,6 @@ export default function decorate(block){
    
     </p>
     
-    </div>
     `;
     block.innerHTML = htmlteaser;
 }
