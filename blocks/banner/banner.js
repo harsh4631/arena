@@ -22,7 +22,7 @@ export default function decorate(block){
 
         const des2 = listbanner?.textContent.trim();
 
-        console.log("bye",des2);
+        // console.log("bye",des2);
 
         return{
             dispimg,

@@ -1,26 +1,24 @@
 export default function decorate(block){
     function getteasercardData(block){
-        const[toparea, bottomarea]=block.children;
+        const[toparea,bottomarea]=block.children;
 
         const mainheading = toparea?.textContent.trim();
-
-        const imague23 = bottomarea.querySelector('picture');
-     
-        const [belowdes,titleh1] = bottomarea.querySelectorAll('p');
-
-        const viewtitle = titleh1?.textContent.trim();
-
+        const imague = bottomarea.querySelector('picture');
+        const [belowtitle , belowdes] = bottomarea.querySelectorAll('p');
+        const viewtitle = belowtitle?.textContent.trim();
         const viewdesc = Array.from(belowdes?[belowdes]:[]).map((p) => p.outerHTML).join('');
 
         console.log("hello",viewdesc);
         return{
             mainheading,
-            imague23,
+            imague,
             viewtitle,
             viewdesc
         };
 
     }
     const teascarData = getteasercardData(block);
-    
+    const htmlteaser = `
+    `;
+    block.innerHTML = htmlteaser;
 }
