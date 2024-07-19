@@ -25,23 +25,14 @@ export default function decorate(block){
     const htmlteaser = `
     <div class="view-teaser">
        
-       ${teascarData.mainheading? `<h1>${teascarData.mainheading}</h1>` : ''}
-      
-
-
-    <div class="viewsub-teaser">
-    
-    
+    ${teascarData.mainheading? `<h1>${teascarData.mainheading}</h1>` : ''}
     ${teascarData.imague23 ? teascarData.imague23.outerHTML : ''}
-    
-    
     ${teascarData.viewtitle ? `${teascarData.viewtitle}` : ''}
- 
-
     <p class = "hjl">
     ${teascarData.viewdesc ? `${teascarData.viewdesc}` : ''}
-   </p>
-    </div>
+   
+    </p>
+    
     </div>
     `;
     block.innerHTML = htmlteaser;
