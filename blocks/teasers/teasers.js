@@ -38,9 +38,9 @@ export default function decorate(block){
     ${teascarData.viewtitle ? `${teascarData.viewtitle}` : ''}
  
 
-    
-    ${teascarData.viewdesc ? `<p>${teascarData.viewdesc}</p>` : ''}
-   
+    <p class = "hjl">
+    ${teascarData.viewdesc ? `${teascarData.viewdesc}` : ''}
+   </p>
     </div>
     </div>
     `;
