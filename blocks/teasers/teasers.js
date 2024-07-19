@@ -24,14 +24,7 @@ export default function decorate(block){
     const teascarData = getteasercardData(block);
     const htmlteaser = `
    
-       
-    ${teascarData.mainheading? `<h1>${teascarData.mainheading}</h1>` : ''}
-    ${teascarData.imague23 ? teascarData.imague23.outerHTML : ''}
-    ${teascarData.viewtitle ? `${teascarData.viewtitle}` : ''}
-    <p class = "hjl">
-    ${teascarData.viewdesc ? `${teascarData.viewdesc}` : ''}
    
-    </p>
     
     `;
     block.innerHTML = htmlteaser;
