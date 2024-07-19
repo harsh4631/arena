@@ -54,6 +54,9 @@ export default function decorate(block){
 
     ${bannernexa.des2 ? `<p class ="ds2">${bannernexa.des2}</p>` : ''}
     </div>
+
+    <div class="black-bar"></div>
+    <div class="white-section"></div>
     
     
  </div>
