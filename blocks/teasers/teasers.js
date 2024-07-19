@@ -22,10 +22,5 @@ export default function decorate(block){
 
     }
     const teascarData = getteasercardData(block);
-    const htmlteaser = `
-   
-   
     
-    `;
-    block.innerHTML = htmlteaser;
 }
