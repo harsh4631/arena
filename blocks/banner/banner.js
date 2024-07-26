@@ -56,6 +56,8 @@ export default function decorate(block){
     </div>
 
     <div class="black-bar"></div>
+
+    
     <div class="white-section"></div>
     
     
