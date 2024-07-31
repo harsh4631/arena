@@ -10,7 +10,7 @@ export default function decorate(block){
         // const viewtitle = belowtitle.querySelector('p');
         const viewdesc = Array.from(belowdes?[belowdes]:[]).map((p) => p.outerHTML).join('');
 
-        // console.log("hello",imague);
+        console.log("hello",imague);
         return{
             // mainheading,
             imague,
