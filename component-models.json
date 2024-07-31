@@ -288,7 +288,7 @@
         "value":"" 
       },
       {
-        "component": "Input-text",
+        "component": "Inputtext",
         "valueType": "string",
         "name": "filtercity",
         "label": "placeholderc",
